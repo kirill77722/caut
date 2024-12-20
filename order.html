@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Заказы</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="icon" href="фон/Икона.png" type="img-flash-icon">
+</head>
+<body>
+    <header>
+        <h1 align="center">Компания "Экспресс Кредит"</h1>
+        <h2 align="center">Мы работаем для вас</h2>
+    </header>
+   
+        <div id="main">
+            <nav>
+                <ul class="menu">
+                 <li><a href="index.html"> Главная </a></li><br>
+                 <li><a>Меню</a>
+                     <ul>
+                     <li><a href="employee.html">Работники</a></li>
+                     <li><a href="about.html">О компании</a></li>
+                     <li><a href="order.html">Оформить заказ</a></li>
+                     </ul>
+                 </li>
+                 </ul>
+         
+             </nav>
+
+    <main>
+        
+        <section style="width: 500px;">
+            <center>
+            <h3>Оформление кредита</h3>
+            </center>
+            <form action="orderup" method="post">
+                
+                <center>
+                <table>
+                    <tr>
+                        <td align="right">
+                            <label for="last_name">Фамилия</label>
+                        </td>
+                        <td>
+                            <input type="text" id="last_name" name="last_name" required placeholder="Введите фамилию" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td align="right">
+                            <label for="first_name">Имя</label>
+                        </td>
+                        <td>
+                            <input type="text" id="first_name" name="first_name" required placeholder="Введите имя" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td align="right">
+                            <label for="patronymic">Отчество</label>
+                        </td>
+                        <td>
+                            <input type="text" id="patronymic" name="patronymic" placeholder="Введите отчество" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td align="right">Паспортные данные</td>
+                        <td></td>  <!--  Пустая ячейка, чтобы выравнивание сохранилось -->
+                    </tr>
+                    <tr>
+                        <td align="right">
+                            <label for="Num">Серия</label>
+                        </td>
+                        <td>
+                            <input type="text" id="Num" name="Num" required placeholder="Введите серию паспорта" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td align="right">
+                            <label for="Nom">Номер</label>
+                        </td>
+                        <td>
+                            <input type="text" id="Nom" name="Nom" required placeholder="Введите номер паспорта" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td align="right">
+                            <label for="password">Телефон</label>
+                        </td>
+                        <td>
+                            <input type="tel" id="phone" name="phone" required placeholder="Введите пароль" />
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td align="right">
+                            <label for="okrug">Тип кредита</label>
+                        </td>
+                        <td>
+                            <select id="okrug" name="okrug" required placeholder="Выберите федеральный округ">
+                                <option value="">Выберите тип кредита</option>
+                                <option value="Центральный">Автокредит</option>
+                                <option value="Северо-Западный">Жилищная ипотека</option>
+                                <option value="Приволжский">Микрозайм</option>
+                                <option value="Южный">Потребительский кредит</option>
+                                <option value="Северо-Кавказский">Кредит под залог имущества</option>   
+                            </select>
+                        </td>
+                    </tr>
+    
+                    <tr>
+                        <td align="right">Запрашиваю</td>
+                        <td></td>  <!--  Пустая ячейка, чтобы выравнивание сохранилось -->
+                    </tr>
+                    <tr>
+                        <td align="right">
+                            <label for="Time">Сумма кредита</label>
+                        </td>
+                        <td>
+                            <input type="number" id="number" name="number" required placeholder="Введите сумму" />
+                        </td>
+                    </tr>
+    
+                    <tr>
+                        <td valign="top" align="right">
+                            <label for="wishes">Пожелания:</label>
+                        </td>
+                        <td>
+                            <textarea id="wishes" name="wishes" placeholder="Введите ваши пожелания"></textarea>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td align="center" colspan="2">
+                            <input type="submit" value="Подтвердить заказ" />
+                        </td>
+                    </tr>
+                </table>  
+            </center>  
+            </form>
+        </section>    
+    </main>
+</div>
+
+
+    <footer class="pol">
+        <a href="#top" class="scroll-to-top" > Наверх</a>   
+        <p><i>©Кирилл и компания</i></p>
+    </footer>
+</body>
+</html>

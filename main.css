@@ -1,0 +1,156 @@
+/* Стили для ссылок */
+a {
+    color: rgb(0, 0, 0); /* Цвет текста черный */
+    transition: color 0.3s ease;
+    font-family: 'Century'; /* Плавный переход цвета */      
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+a:visited {
+    color: rgb(0, 0, 0);
+    font-family: 'Century'; /* Цвет текста черный для посещенных ссылок */
+    padding-left: 10px;
+    padding-right: 10px;
+    
+}
+
+a:hover {
+    text-decoration: none; /* Подчеркивание при наведении */
+    color: #000000; /* Изменение цвета при наведении */
+}
+.diana {
+    background: #d9dabb; /* Цвет фона */
+    width: 170px; /* Ширина */
+    margin: 0 10px 10px 0; /* Отступы */
+    padding: 10px 0; /* Поля сверху и снизу */
+    text-align: center; /* Выравнивание по центру */
+    display: inline-block; /* Строчно-блочный элемент */
+    border-radius: 15px;
+    }
+.diana img {
+    border: 5px solid #7FC7FF; /* Параметры рамки */
+    border-radius: 20px;
+    width: 150px;
+}
+.diana p {
+    margin: 0; /* Отступы */
+}
+
+
+
+    *{
+    box-sizing: border-box;
+    }
+    body {
+    background-image: url(фон/Зад.jpg);
+    margin: 0;
+    }
+    #main {
+    display: flex;
+    min-height: calc(100vh - 40vh);
+    }
+    #main > article {
+    flex: 1;
+    }
+    #main > nav,
+    #main > aside {
+    flex: 0 0 26vw;
+    background: linear-gradient(rgba(168,228,160, 0.705),rgb(176, 183, 198));
+    }
+    #main > nav {
+    order: -1;
+    }
+    header, footer, article, nav, aside {
+    padding: 1em;
+    }
+    header, footer {
+    background: linear-gradient(rgba(172,183,142, 0.705), rgb(197, 208, 230));
+
+    }   
+     main{      
+        background-color: rgba(80,125,42, 0.801);
+    }
+    main h2{
+        text-align: center;
+    }   
+    ul {
+        width: 180px; /* Ширина меню */
+        list-style: none; /* Для списка убираем маркеры */
+        margin: 0; /* Нет отступов вокруг */
+        padding: 0; /* Убираем поля вокруг текста */
+        font-family: Arial, sans-serif; /* Рубленый шрифт для текста меню */
+        font-size: 10pt; /* Размер названий в пункте меню */
+    }
+    li ul {
+        position: absolute; /* Подменю позиционируются абсолютно */
+        display: none; /* Скрываем подменю */
+        margin-left: 165px; /* Сдвигаем подменю вправо */
+        margin-top: -2em; /* Сдвигаем подменю вверх */
+        }
+        li a {
+        display: block; /* Ссылка как блочный элемент */
+        padding: 5px; /* Поля вокруг надписи */
+        text-decoration: none; /* Подчеркивание у ссылок убираем */
+        color: rgb(0, 0, 0); /* Цвет текста */
+        border: 1px solid rgb(62,180,137);/* Рамка вокруг пунктов меню */
+        background-color: rgb(201,220,135); /* Цвет фона */
+        border-bottom: none; /* Границу снизу не проводим */
+        }
+        li a:hover {
+        color: #ffe; /* Цвет текста активного пункта */
+        background-color: rgb(202,218,186); /* Цвет фона активного пункта */
+        }
+        li:hover ul {
+        display: block; /* При выделении пункта курсором мыши отображается
+        подменю */
+        }
+.pol{
+   height: 206px;
+}
+p{
+    border-left: 100px;
+}
+a.scroll-to-top{
+    background: rgb(202,218,186);
+    bottom: 50px;
+    right: 20px;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+@media screen and (max-width:600px) {
+    img{
+        width: 100%;
+        height: auto;
+    }
+}
+@media screen and (max-width:1000px) {
+    aside{
+        display: none;
+    }
+    ul {
+        width: auto;
+    }
+    li ul{
+        position: absolute; /* Подменю позиционируются абсолютно */
+        display: none; /* Скрываем подменю */
+        margin-right: 0px;
+        margin-top: 2em;
+    }
+    
+}
+    
+@media screen and (max-width:640px){
+ header{
+        height: auto;
+    }
+    footer{
+        height: auto;
+    }
+}
+ul.spis{
+    width: 500px;
+    list-style:  "✔";
+    margin-left: 20px;
+}
